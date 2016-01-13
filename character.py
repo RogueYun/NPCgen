@@ -80,31 +80,6 @@ class Character(object):
 		else:
 			self.age_title = "none"
 	
-	def fc_race(self):
-		race_var = raw_input("Please select a race:\n\n\t[a] Dawrf\n\t[b] Dragonborn\n\t[c] Elf\n\t[d] Gnome\n\t[e] Halfling\n\t[f] Half-Elf\n\t[g] Half-Orc\n\t[h] Human\n\t[i] Tiefling\n\t[r] Random\n\n>>: ")
-		if race_var.lower() == "a":
-			self.race_name = "Dwarf"
-		elif race_var.lower() == "b":
-			self.race_name = "Dragonborn"
-		elif race_var.lower() == "c":
-			self.race_name = "Elf"
-		elif race_var.lower() == "d":
-			self.race_name = "Gnome"
-		elif race_var.lower() == "e":
-			self.race_name = "Halfling"
-		elif race_var.lower() == "f":
-			self.race_name = "Half-Elf"
-		elif race_var.lower() == "g":
-			self.race_name = "Half-Orc"
-		elif race_var.lower() == "h":
-			self.race_name = "Human"
-		elif race_var.lower() == "i":
-			self.race_name = "Teifling"
-		elif race_var.lower() == "r":
-			pass
-		else:
-			self.race_name = "none"
-	
 	def fc_stat_roll(self): #Manual entry, roll, ask if stats would like to be kept.
 		num = 3
 		if self.age_title == "Baby":
